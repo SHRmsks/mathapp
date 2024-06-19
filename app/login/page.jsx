@@ -5,7 +5,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Button from "@mui/material/Button";
 import { useState, useMemo, useEffect } from "react";
 import GoogleButton from "./google.js";
-async function LoginPage() {
+ function LoginPage() {
   const [suggestedName, setSuggestedName] = useState([]);
   const [username, setUsername] = useState("");
   const [submit, setSubmit] = useState(false);
