@@ -3,7 +3,7 @@ export const metadata = {
   description: "Open Source Math APP",
 };
 
-export default function ServerLayout({ children }) {
+export default function ServerLayout({ children }) {  // this is the meta 
   return (
     <html lang="en">
       <head>
