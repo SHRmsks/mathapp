@@ -1,16 +1,25 @@
 "use client";
 import "../../app/tailwind.css";
 import Button from "@mui/material/Button";
+import TimebasedTheme from "./timechecker.js";
 function Link(props) {
-  return <Button onClick={() => (window.location.href = props.href)}> {props.name}</Button>;
+  return (
+    <Button className="max-w-[10vw]" color="secondary" size="medium" variant="text" href={props.href}>
+      {" "}
+      {props.name}
+    </Button>
+  );
 }
 
 function Navi() {
   const links = [
-    { href: "/login", name: "Login" },
     { href: "/About", name: "About" },
+    { href: "/login", name: "Login" },
   ]; // formats
-  return <div className="grid max-w-[100vw] grid-cols-3 grid-rows-1 gap-x-[3%] justify-between">
-    {links.map((props) => Link(props))}</div>;
+  return (
+    <TimebasedTheme>
+      <div className="after:: flex relative max-w-[100vw] gap-x-[3vw] flex-wrap flex-row-reverse bg-gradient-to-r from-[#816bd1] to-[#4d17e3] -z-2">{links.map((props) => Link(props))}</div>
+    </TimebasedTheme>
+  );
 }
 export default Navi;

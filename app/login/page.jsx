@@ -42,7 +42,7 @@ import GoogleButton from "./google.js";
         <form onSubmit={handleSubmit}>
           <div
             className="grid max-grid-cols-1 gap-y-[4vh] 2xl:max-w-[30vw] xl:max-w-[35vw] lg:max-w-[40vw] 
-        md:max-w-[40vw] sm: max-w-[50vw] min-w-[10vw]"
+             md:max-w-[40vw] sm: max-w-[50vw] min-w-[10vw]"
           >
             <h1 className="text-center">Please Login First</h1>
             <div className="flex items-center flex-nowrap gap-x-[10px]">

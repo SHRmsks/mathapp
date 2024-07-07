@@ -5,6 +5,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { ComputeEngine } from "@cortex-js/compute-engine";
 import { MathfieldElement } from "mathlive";
 import Button from "@mui/material/Button";
+import Navi from "../../components/navigator/nav.js";
 
 function PlayGround() {
   const ce = new ComputeEngine();
@@ -52,6 +53,8 @@ function PlayGround() {
   }, [input, parsedInput]);
 
   return (
+    <>
+    <Navi/>
     <div
       className="grid max-grid-cols-1 gap-y-[4vh] 2xl:max-w-[30vw] xl:max-w-[35vw] lg:max-w-[40vw] 
         md:max-w-[40vw] sm: max-w-[50vw] min-w-[10vw]"
@@ -66,6 +69,7 @@ function PlayGround() {
         <Button variant="contained">Submit</Button>
       </div>
     </div>
+    </>
   );
 }
 
